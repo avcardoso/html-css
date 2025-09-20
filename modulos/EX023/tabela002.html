@@ -13,6 +13,12 @@
     table{
         width: 500px;
         border-collapse: collapse;
+        position: relative;
+    }
+    thead tr th{
+        position: static;
+        top: 0px;
+
     }
     caption{
         font-size: 1.5em;
@@ -24,11 +30,13 @@
         border: 1px solid black;
         padding: 10px;
     }
+    tbody >tr:nth-child(2n){
+        background-color: lightgrey;
+    }
     thead{
         background-color: lightgrey;
     }
     td.num{
-        background-color: rgba(137, 43, 226, 0.205);
         text-align: right;
     }
 </style>
