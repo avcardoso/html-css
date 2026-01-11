@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fomularios</title>
+</head>
+<body>
+    <form method="get" autocomplete="on">
+        <p>
+            <label for="inum">range</label>
+            <input type="range" name="num" id="inum" min="1" max="10" value="5" oninput="irange.innerHTML = Number(inum.value)">
+
+            <output id="irange">5</output>
+        </p>
+
+
+        <p><input type="submit" value="enviar"></p>
+        <p>
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
