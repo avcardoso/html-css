@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formuario</title>
+</head>
+<body>
+    <h1>ex de formularios</h1>
+
+    <form method="get">
+        <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="Cor" id="icor" value="#49c5c3">
+        </p>
+
+        <p>
+            <label for="inivel">Nivel de satisfação</label>
+            <input type="range" name="nivel" id="inivel" value="2" min="1" max="11">
+        </p>
+
+        <p>
+            <input type="file" >
+        </p>
+
+        <p>
+            <label for="isenha">senha:</label>
+            <input type="password" name="senha" id="isenha" required placeholder="sua senha">
+        </p>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+        
+    </form>
+    
+</body>
+</html>
