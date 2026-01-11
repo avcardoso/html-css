@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <h1>ex de formularios</h1>
+
+    <form method="get">
+        
+        <p>
+            <label for="iest">Estado:</label>
+            <select name="Estado" id="iest">
+                <optgroup label="sudeste">
+                    <option value="">---escolha---</option>
+                    <option value="am">amazonzas</option>
+                    <option value="sp">sao paulo</option>
+                    <option value="rj">rio de janeio</option>
+                    <option value="tc">tocantins</option>
+                </optgroup>
+
+                <optgroup label="norte">
+                    <option value="pa">para</option>
+                    <option value="rm">roraima</option>
+                    <option value="al">alagoas</option>
+                </optgroup>
+            </select>
+        </p>
+
+        <p>
+            <label for="iprofissao">profissao:</label>
+            <input type="text" name="profissao" id="iprofissao" list="lstprofissao">
+            <datalist id="lstprofissao">
+                <option >administador</option>
+                <option >contador</option>
+                <option >desenvolvedor</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">mensagem</label>
+            <textarea name="msg" id="imsg"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
